@@ -1,0 +1,70 @@
+# User Management Screen User Interface Specification
+
+## Overview
+
+The User Management Screen is a part of the administration panel of the application. It allows administrators to manage users, including creating new users and editing existing users.
+
+## Requirements
+
+1. Provide input fields to enter user details: username, display name, phone, email, user roles, and enabled status.
+2. Allow administrators to select user roles from a predefined list (Guest, Admin, SuperAdmin).
+3. Validate input fields to ensure data integrity.
+4. Provide functionality to create a new user.
+5. Show appropriate error messages if any operation fails.
+
+## UI Components and Behavior
+
+### New User Form
+
+- Display input fields for entering user details:
+  - Username (text field)
+  - Display Name (text field)
+  - Phone (text field)
+  - Email (text field)
+  - User Roles (dropdown/select field with options: Guest, Admin, SuperAdmin)
+  - Enabled (checkbox for user status)
+- Validation:
+  - Username, display name, email, and user roles are required fields.
+  - Email field should be in a valid email format.
+- Show appropriate error messages if validation fails.
+- Upon successful submission:
+  - Clear input fields.
+  - Display a success message.
+  - Optionally, provide an option to add another user without reloading the page.
+
+### Edit User Form
+
+- Similar to the New User form but with pre-filled input fields containing existing user details.
+- Allow administrators to modify user details.
+- Validation and submission behavior are the same as the New User form.
+
+### User Roles Dropdown
+
+- Provide a dropdown/select field for selecting user roles.
+- Options: Guest, Admin, SuperAdmin.
+- Default role: Guest.
+
+## Initial State
+
+- Upon loading the page, display the New User form.
+- Input fields should be empty initially.
+- Show a loading indicator while fetching data if necessary.
+
+## Accessibility
+
+- Ensure all UI components are accessible and keyboard navigable.
+- Use appropriate labels and ARIA attributes for screen readers.
+
+## Error Handling
+
+- Display appropriate error messages if any operation (adding, editing users) fails due to server errors or validation errors.
+
+## Mockups
+
+[Mockup link]
+
+## Notes
+
+- Ensure the UI design is consistent with the overall application design language.
+- Consider internationalization and localization requirements.
+
